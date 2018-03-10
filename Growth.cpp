@@ -11,7 +11,6 @@ Growth::Growth(float threshold, string ifname, string ofname, string lfname) {
 	fOutput = new ofstream(ofname.c_str(), ios::out);
 	fLog = new ofstream(lfname.c_str(), ios::out);
 	
-
 }
 
 Growth::~Growth() {
@@ -27,7 +26,6 @@ Growth::~Growth() {
 
 void Growth::mine() {
 
-	
 	char buf[MAX_SIZE];
 	while (!fInput->eof()) {
 
