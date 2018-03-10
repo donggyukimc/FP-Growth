@@ -2,7 +2,7 @@
 #include "Tree.h"
 #include "Node.h"
 
-#define MAX_SIZE 1024
+#define MAX_SIZE 1024	//Max size of inputted transaction
 
 Growth::Growth(float threshold, string ifname, string ofname, string lfname) {
 
