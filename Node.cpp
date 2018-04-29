@@ -1,10 +1,7 @@
 #include "Node.h"
 
-bool NodeCompare::operator() (Node *left, Node *right) const {
-		if (left->getId() > right->getId())
-			return false;
-		else
-			return true;
+bool NodeCompare::operator() (const Node *left, const Node *right) const {
+	return left->getId() > right->getId();
 }
 
 Node::Node() {

@@ -9,7 +9,7 @@ using namespace std;
 class Node;
 
 struct NodeCompare {
-	bool operator() (Node*, Node*) const;
+	bool operator() (const Node*, const Node*) const;
 };
 
 class Node {

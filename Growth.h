@@ -11,6 +11,8 @@ class Growth {
 private:
 	Tree g_tree;
 	float threshold;
+
+public:
 	ifstream *fInput;
 	ofstream *fOutput;
 	ofstream *fLog;
@@ -18,7 +20,6 @@ private:
 	map<string, int> name2id;
 	map<int, string> id2name;
 
-public:
 	Growth(float, string, string, string);
 	~Growth();
 

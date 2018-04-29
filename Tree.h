@@ -2,12 +2,15 @@
 #define _TREE_H_
 
 #include "Node.h"
+#include <fstream>
+#include <string>
 #include <vector>
+#include <map>
 
 class Tree {
 
 private:
-	Node *root;
+	set<Node*, NodeCompare> root;
 	set<Node*, NodeCompare> header;
 
 public:
@@ -17,7 +20,7 @@ public:
 	void makeHeader(vector<int>, int);
 	void prune(float);
 	void makeTree(vector<int>, int);
-	int growth(vector<int>, float, ostream*);
+	int growth(vector<int>, float, ofstream*);
 };
 
 #endif
